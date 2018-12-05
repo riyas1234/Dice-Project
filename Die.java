@@ -1,18 +1,23 @@
 public class Die {
+
+	//instance variables
 	private int sides;
 	private int value;
 
-	public Die (){
+	//default constructor
+	public Die(){
 		sides = 6;
 		value = 1;
 	}
 
+	//non-default constructor
 	public Die(int sides, int value){
 		this.sides = sides;
 		this.value = value;
 	}
 
-	public int getSides (){
+	//getter methods
+	public int getSides(){
 		return sides;
 	}
 
@@ -20,11 +25,13 @@ public class Die {
 		return value;
 	}
 
-	public void roll (){
+	//randomizes value
+	public void roll(){
 		value = (int)(Math.random()*sides)+1;
 	}
 
-	public String toString (){
+	//toString
+	public String toString(){
 		return "Number of sides: "+sides+", Value: "+value;
 	}
 }
