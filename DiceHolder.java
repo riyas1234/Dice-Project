@@ -19,16 +19,16 @@ public class DiceHolder{
 
 	public void shake(){
 		for(int i = 0; i<holder.size(); i++){
-			Die.roll();
+			holder.get(i).roll();
 
 		}
 
 	}
 
 	public String toString(){
-		String print = "";
 		for(int i = 0; i<holder.size(); i++)
-			print += "Number of sides: "+Die.holder.getSides()+", Value: "+Die.holder.getValue();
+			System.out.println(holder.get(i)+"\n");
+			return "";
 	}
 
 }
